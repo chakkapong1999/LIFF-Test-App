@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <button @click="isOpenCamera = !isOpenCamera">Camera</button>
+    <div class="pt-5">
+      <button class="btn btn-secondary" @click="isOpenCamera = !isOpenCamera">Camera</button>
+    </div>
     <Camera v-if="isOpenCamera" />
   </div>
 </template>
