@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import { handlePrimaryLIFFCompactGuard, handlePrimaryLIFFGuard, handlePrimaryLIFFTallGuard } from './guards'
+import { handlePrimaryLIFFCompactGuard, handlePrimaryLIFFTallGuard } from './guards'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    component: Home,
-    beforeEnter: handlePrimaryLIFFGuard
+    component: Home
+    // beforeEnter: handlePrimaryLIFFGuard
   },
   {
     path: '/tall',
